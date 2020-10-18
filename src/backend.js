@@ -32,7 +32,7 @@ export const handlers = [
       }),
     )
   }),
-  pokemonApi.query('PokemonInfo', (req, res, ctx) => {
+  pokemonApi.query('Pokemon', (req, res, ctx) => {
     if (window.useRealAPI) return ctx.fetch(req)
 
     const pokemon = allPokemon[req.variables.name.toLowerCase()]
